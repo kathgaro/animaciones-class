@@ -22,7 +22,6 @@ h2{
 .caja-transform{
     display: flex;
     flex-flow: wrap;
-
 }
 .transform{
     width: 500px;
@@ -300,4 +299,35 @@ circle:hover{
     ;
     gap: 5px;
 
+}
+
+/*mq*/
+@media (max-width: 720px){
+    .grid-doggi{
+        grid-template-columns: 1fr;
+        grid-template-rows: repeat(6, 1fr);
+        grid-template-areas: 
+        "grid-doggi-1"
+        "grid-doggi-2 "
+        "grid-doggi-3"
+        "grid-doggi-4 "
+        "grid-doggi-5" 
+        "grid-doggi-6 "
+        ;
+        gap: 5px;
+    
+    }
+    .grid-michi{
+        grid-template-columns: 1fr;
+        grid-template-rows: repeat(6, 1fr);
+        grid-template-areas: 
+        "grid-michi-1"
+        " grid-michi-2 "
+        "grid-michi-3"
+        "grid-michi-4 "
+        "grid-michi-5"
+        "grid-michi-6 "
+        ;
+        gap: 5px;
+    }
 }
